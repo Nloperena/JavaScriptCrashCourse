@@ -33,3 +33,9 @@ console.log(str);
 
 let receipt = isStoreOpen && (cash >= price) ? "give receipt" : "do not give receipt"
 console.log(receipt)
+
+let count = 1;
+while (count <=100) {
+    console.log(count)
+    count = count +1
+}

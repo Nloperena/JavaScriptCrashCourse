@@ -136,18 +136,28 @@
 // studentB = ['FAIL', 'FAIL', 'B']
 // studentC = ['FAIL', ]
 
-let grades = ['A+', 'A', 'FAIL']
+// let grades = ['A+', 'A', 'FAIL']
 
 // let goodGrades = grades.filter(element => element != 'FAIL');
 // console.log(goodGrades)
 
 //Create new empty array
-let goodGrades = []
+// let goodGrades = []
 
-for (let i = 0; i < grades.length; ++i) {
-    if (grades[i] !== 'FAIL') {
-        goodGrades.push(grades[i]);
-    }
-}
+// for (let i = 0; i < grades.length; ++i) {
+//     if (grades[i] !== 'FAIL') {
+//         goodGrades.push(grades[i]);
+//     }
+// }
 
-console.log(goodGrades)
+// console.log(goodGrades)
+
+
+
+let arr = [1, 4, 9, 16]
+
+let newArray = arr.map((element) => {
+    return 'dog';
+})
+
+console.log(newArray)

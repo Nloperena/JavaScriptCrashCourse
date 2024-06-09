@@ -68,6 +68,7 @@
 //    }
 // };
 
+
 // const str = "Frontend Simplifed"
 
 // for (let i = 0; i < str.length; ++i) {
@@ -154,10 +155,27 @@
 
 
 
-let arr = [1, 4, 9, 16]
+// let arr = [1, 4, 9, 16]
 
-let newArray = arr.map((element) => {
-    return 'dog';
-})
+// let newArray = arr.map((element) => {
+//     return 'dog';
+// })
 
-console.log(newArray)
+// console.log(newArray)
+
+
+// let dollars = [1, 5, 10, 3];
+
+// let cents = dollars.map(element => element * 100)
+
+// console.log(cents)      
+
+let dollars = [1, 5, 10, 3];
+
+let cents = [];
+
+for (let i = 0; i < dollars.length; ++i) {
+   cents.push(dollars[i] * 100);
+ }
+
+console.log(cents)

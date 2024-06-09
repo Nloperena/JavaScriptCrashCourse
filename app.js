@@ -248,17 +248,48 @@ let users = [{
 // }
 
 
-function register(user) {
-    users.push(user);
+// function register(user) {
+//     users.push(user);
+// }
+
+// register({
+//     username: 'nick',
+//     email: 'nick@gmail.com',
+//     password: 'password',
+//     userSubscriptionStatus: 'VIP',
+//     discordID: 'timmywewe',
+//     lessonsCompleted: [0, 1]
+// });
+
+// console.log(users);
+
+
+
+// DOM Practice
+
+
+// Change HTML
+//First way of accessing an element
+    console.log(document.querySelector(`h1`));
+    
+//Second way of accessing an element
+console.log(document.getElementById(`title`));
+
+document.querySelector(`h1`).innerHTML += `Nico Loperena`
+
+let a = 1;
+a += 2;
+
+console.log(a);
+
+// //Change CSS
+// document.querySelector('h1').style.color = 'red';
+// document.querySelector('h1').style.fontSize = '28px';
+
+function changeTitleToRed() {
+    console.log(`clicked`);
+    
+// //Change CSS
+document.querySelector('h1').style.color = 'red';
+document.querySelector('h1').style.fontSize = '28px';
 }
-
-register({
-    username: 'nick',
-    email: 'nick@gmail.com',
-    password: 'password',
-    userSubscriptionStatus: 'VIP',
-    discordID: 'timmywewe',
-    lessonsCompleted: [0, 1]
-});
-
-console.log(users);

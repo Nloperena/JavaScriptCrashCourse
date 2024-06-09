@@ -170,12 +170,95 @@
 
 // console.log(cents)      
 
-let dollars = [1, 5, 10, 3];
+// let dollars = [1, 5, 10, 3];
 
-let cents = [];
+// let cents = [];
 
-for (let i = 0; i < dollars.length; ++i) {
-   cents.push(dollars[i] * 100);
- }
+// for (let i = 0; i < dollars.length; ++i) {
+//    cents.push(dollars[i] * 100);
+//  }
 
-console.log(cents)
+// console.log(cents)
+
+// OBJECTS SECTION PRACTICE
+
+let users = [{
+    username: `Nico`,
+    email: `NicholasLoperena@gmail.com`,
+    password: `test123`,
+    userSubscriptionStatus: `VIP`,
+    discordID: `Plimbro`,
+    lessonsCompleted: [0, 1]
+}, {
+    username: `Mitri`,
+    email: `mitri@gmail.com`,
+    password: `mitri1234`,
+    userSubscriptionStatus: `VIP`,
+    discordID: `Mitri2222`,
+    lessonsCompleted: [0, 1, 2, 3],
+},
+{
+    username: `Zen`,
+    email: `Zen@gmail.com`,
+    password: `zen1234`,
+    userSubscriptionStatus: `VIP`,
+    discordID: `Zen2222`,
+    lessonsCompleted: [1, 4, 7, 9],
+}];
+
+
+// function login(email, password) {
+//     for (let i = 0; i < users.length; ++i) {
+//         if (users[i].email === email) {
+//             console.log(users[i]);
+//             if (users[i].password === password) {
+//                 console.log(`log the user in - the details are correct`)
+//             } else {
+//                 console.log(`Password is incorrect`)
+//             }
+//             return;
+//         }
+
+//     }
+//     console.log (`could not find an email that matches`)
+// }
+
+// login(`NicholasLoperena@gmail.com1`, `test123`);
+
+
+// SECOND OBJECTS EXERCISE
+
+
+// function register(
+//     username,
+//     email,
+//     password,
+//     userSubscriptionStatus,
+//     discordID,
+//     lessonsCompleted) {
+//     let user = {
+//         username: username,
+//         email: email,
+//         password: password,
+//         userSubscriptionStatus: userSubscriptionStatus,
+//         discordID: discordID,
+//         lessonsCompleted: lessonsCompleted,
+//     };
+//     users.push(user);
+// }
+
+
+function register(user) {
+    users.push(user);
+}
+
+register({
+    username: 'nick',
+    email: 'nick@gmail.com',
+    password: 'password',
+    userSubscriptionStatus: 'VIP',
+    discordID: 'timmywewe',
+    lessonsCompleted: [0, 1]
+});
+
+console.log(users);
